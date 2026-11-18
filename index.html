@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Performance Summary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>University Performance Summary</h1>
+        <p>Enter student records in JSON format to see the performance summary for each university.</p>
+
+        <label for="studentData">Student Records (JSON)</label>
+        <textarea id="studentData">[
+  {"studentId": 1, "university": "CHRIST", "score": 85},
+  {"studentId": 2, "university": "CHRIST", "score": 70},
+  {"studentId": 3, "university": "ABC", "score": 90},
+  {"studentId": 4, "university": "ABC", "score": 60},
+  {"studentId": 5, "university": "CHRIST", "score": 95}
+]</textarea>
+
+        <button id="processButton">Process Records</button>
+        <p id="error"></p>
+
+        <h2>University Summary</h2>
+        <pre id="result">Click the button to see the summary.</pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
